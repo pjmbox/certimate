@@ -27,7 +27,7 @@ export default defineConfig(({ command }) => {
   }
 
   return {
-    base: "./",
+    base: "/certimate/",
     define: {
       __APP_VERSION__: JSON.stringify(appVersion),
     },
