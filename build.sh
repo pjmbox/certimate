@@ -6,12 +6,12 @@ echo 'compile web'
 cd ui
 npm install
 npm run build
-rm -f ../../build/dist.tgz
-tar -czf ../../build/dist.tgz ./dist
+rm -f ../../artifacts/dist.tgz
+tar -czf ../../artifacts/dist.tgz ./dist
 
 echo 'compile go'
 cd ..
 go build -ldflags="-s -w" -o certimate .
-rm -f ../build/certimate
-mv certimate ../build/
+rm -f ../artifacts/certimate
+mv certimate ../artifacts/
 
