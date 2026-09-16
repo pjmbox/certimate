@@ -124,7 +124,4 @@ export const router = createHashRouter([
       </ErrorLayout>
     ),
   },
-],
-{
-  basename: "/certimate",
-});
+]);
